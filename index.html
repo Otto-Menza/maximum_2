@@ -6,46 +6,120 @@
     <title>Maximum</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@400;700&family=Poppins:wght@200;400;700&family=Urbanist:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@400;700&family=Poppins:wght@200;400;700&family=Urbanist:wght@200;400&display=swap" rel="stylesheet">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="pie-top">
-        <ul class="logo-nombre">
-            <li class="item-logo"><img src="./img/logo_1.png" alt="" class="logo"></li>
-            <li class="item-nom">MAXIMUM</li>
-        </ul>
-        <ul class="menu">
-            <li class="item-menu"><a href="./index.html" class="activo" class="item-men">LO NUEVO</a></li>
-            <li class="item-menu"><a href="./pages/bolsos.html" class="item-men">BOLSOS</a></li>
-            <li class="item-menu"><a href="./pages/rinioneras.html" class="item-men">RIÑONERAS</a></li>
-            <li class="item-menu"><a href="./pages/nosotros.html" class="item-men">NOSOTROS</a></li>
-            <li class="item-menu"><a href="./pages/contacto.html" class="item-men">CONTACTO</a></li>
-        </ul>
-        <ul class="iconos-top">
-            <li class="item-icono"><a href="#"><img src="./img/lupa.png" alt="" class="icon-top"></a></li>
-            <li class="item-icono"><a href="#"><img src="./img/carrito.png" alt="" class="icon-top"></a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./img/logo_1.png" alt="" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div></div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/lonuevo.html">LO NUEVO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+                <div class="conte-icon-top d-flex">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                    <a href="#"><img src="./img/carrito.png" alt="" class="icon-top"></a>
+                </div>
+              </div>
+            </div>
+          </nav>
 
-    <section class="catalogo-lonuevo">
-        <table class="tb-ctlogo">
-            <tr class="menu-fotos">
-                <td class="td-fotos"><img src="./img/producto-1.jpg" alt="" class="foto"></td>
-                <td class="td-fotos"><img src="./img/producto-1.jpg" alt="" class="foto"></td>
-                <td class="td-fotos"><img src="./img/producto-1.jpg" alt="" class="foto"></td>
-            </tr>
-            <tr class="menu-boton">
-                <td class="td-boton"><button class="boton"><a href="">AÑADIR AL CARRITO</a></button></td>
-                <td class="td-boton"><button class="boton"><a href="">AÑADIR AL CARRITO</a></button></td>
-                <td class="td-boton"><button class="boton"><a href="">AÑADIR AL CARRITO</a></button></td>
-            </tr>
-        </table>
-    </section>
-
-    <nav class="icon-wh">
-        <a href="https://api.whatsapp.com/send?phone=573132540014" target="_blank"><img src="./img/whatsapp.png" alt="" class="boton-wh"></a>
-    </nav>
+        <!-- <nav class="pie-top">
+            <ul class="logo-nombre">
+                <li class="item-logo"><img src="./img/logo_1.png" alt="" class="logo"></li>
+                <li class="item-nom">MAXIMUM</li>
+            </ul>
+            <ul class="menu">
+                <li class="item-menu"><a href="./index.html" class="activo" class="item-men">INICIO</a></li>
+                <li class="item-menu"><a href="./pages/lonuevo.html" class="item-men">LO NUEVO</a></li>
+                <li class="item-menu"><a href="./pages/productos.html" class="item-men">PRODUCTOS</a></li>
+                <li class="item-menu"><a href="./pages/nosotros.html" class="item-men">NOSOTROS</a></li>
+                <li class="item-menu"><a href="./pages/contacto.html" class="item-men">CONTACTO</a></li>
+            </ul>
+            <ul class="iconos-top">
+                <li class="item-icono"><a href="#"><img src="./img/lupa.png" alt="" class="icon-top"></a></li>
+                <li class="item-icono"><a href="#"><img src="./img/carrito.png" alt="" class="icon-top"></a></li>
+            </ul>
+        </nav> -->
+    </header>
+    
+    <main class="main-inicio">
+        <div class="conte-inicio">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./img/carrusel (1).png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/carrusel (2).png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/carrusel (3).png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="conte-texto">
+                <div class="item-texto-uno">
+                    <h3 class="texto-uno">No necesitas ser un superhéroe para salvar el planeta <br><br>Solo ser parte de la <span class="texto-uno-color">industria sostenible</span></h3>
+                </div>
+                <div class="linea-horizontal"></div>
+                <div class="item-texto-dos">Te presentamos productos con tela sostenible</div>
+            </div>
+        </div>
+        <!-- <section class="catalogo-lonuevo">
+            <table class="tb-ctlogo">
+                <tr class="menu-fotos">
+                    <td class="td-fotos"><img src="./img/producto-1.jpg" alt="" class="foto"></td>
+                    <td class="td-fotos"><img src="./img/producto-1.jpg" alt="" class="foto"></td>
+                    <td class="td-fotos"><img src="./img/producto-1.jpg" alt="" class="foto"></td>
+                </tr>
+                <tr class="menu-boton">
+                    <td class="td-boton"><button class="boton"><a href="">AÑADIR AL CARRITO</a></button></td>
+                    <td class="td-boton"><button class="boton"><a href="">AÑADIR AL CARRITO</a></button></td>
+                    <td class="td-boton"><button class="boton"><a href="">AÑADIR AL CARRITO</a></button></td>
+                </tr>
+            </table> 
+        </section>-->
+    
+        <nav class="icon-wh">
+            <a href="https://api.whatsapp.com/send?phone=573132540014" target="_blank"><img src="./img/whatsapp.png" alt="" class="boton-wh"></a>
+        </nav>
+    </main>
+    
 
     <footer class="footer">
         <ul class="copy-pie">
@@ -59,5 +133,8 @@
         </ul>
 
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

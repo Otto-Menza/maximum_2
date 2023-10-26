@@ -4,36 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maximum</title>
-    <link rel="stylesheet" href="../css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@400;700&family=Poppins:wght@200;400;700&family=Urbanist:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@400;700&family=Poppins:wght@200;400;700&family=Urbanist:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="pie-top">
-        <ul class="logo-nombre">
-            <li class="item-logo"><img src="../img/logo_1.png" alt="" class="logo"></li>
-            <li class="item-nom">MAXIMUM</li>
-        </ul>
-        <ul class="menu">
-            <li class="item-menu"><a href="../index.html"  class="item-men">LO NUEVO</a></li>
-            <li class="item-menu"><a href="/pages/bolsos.html" class="item-men">BOLSOS</a></li>
-            <li class="item-menu"><a href="./rinioneras.html" class="item-men">RIÑONERAS</a></li>
-            <li class="item-menu"><a href="./nosotros.html" class="activo" class="item-men">NOSOTROS</a></li>
-            <li class="item-menu"><a href="./contacto.html" class="item-men">CONTACTO</a></li>
-        </ul>
-        <ul class="iconos-top">
-            <li class="item-icono"><a href="#"><img src="../img/lupa.png" alt="" class="icon-top"></a></li>
-            <li class="item-icono"><a href="#"><img src="../img/carrito.png" alt="" class="icon-top"></a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../img/logo_1.png" alt="" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div></div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./lonuevo.html">LO NUEVO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+                <div class="conte-icon-top d-flex">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                    <a href="#"><img src="../img/carrito.png" alt="" class="icon-top"></a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="conte-nosotros">
+            <ul class="item-nosotros">
+                <li class="item-img-uno-nosotros"><img src="../img/nosotros-1.jpg" alt="Equipo de trabajo" class="img-nosotros">
+                </li>
+                <li class="item-texto-uno-nosotros">En Maximum, estamos comprometidos con la moda sostenible y la preservación del medio ambiente. Nuestra pasión por la moda se combina con nuestra preocupación por el planeta, y es por eso que hemos creado una línea de bolsos confeccionados exclusivamente con telas ecológicas de la más alta calidad.</li>
+                <li class="item-img-dos-nosotros"><img src="../img/nosotros-2.jpg" alt="Medio ambiente en el planeta" class="img-nosotros">
+                </li>
+                <li class="item-texto-dos-nosotros">Nuestra historia comenzó con un sueño: el sueño de cambiar la forma en que las personas ven y experimentan la moda. Nos dimos cuenta de que la moda no tiene por qué ser perjudicial para el medio ambiente. Por eso, nos propusimos ofrecer una alternativa elegante y sostenible.</li>
+            </ul>
+        </div>
+        <!-- <section class="nosotros">
+            <img src="../img/nosotros-1.jpg" alt="">
+            <h2>SOBRE NOSOTROS</h2>
+            <P>En Maximum, estamos comprometidos con la moda sostenible y la preservación del medio ambiente. Nuestra pasión por la moda se combina con nuestra preocupación por el planeta, y es por eso que hemos creado una línea de bolsos confeccionados exclusivamente con telas ecológicas de la más alta calidad.<br>
+            Nuestra historia comenzó con un sueño: el sueño de cambiar la forma en que las personas ven y experimentan la moda. Nos dimos cuenta de que la moda no tiene por qué ser perjudicial para el medio ambiente. Por eso, nos propusimos ofrecer una alternativa elegante y sostenible.</P>
+        </section> -->
 
-    <section class="nosotros">
-        <img src="../img/nosotros-1.jpg" alt="">
-        <h2>SOBRE NOSOTROS</h2>
-        <P>En Maximum, estamos comprometidos con la moda sostenible y la preservación del medio ambiente. Nuestra pasión por la moda se combina con nuestra preocupación por el planeta, y es por eso que hemos creado una línea de bolsos confeccionados exclusivamente con telas ecológicas de la más alta calidad.<br>
-        Nuestra historia comenzó con un sueño: el sueño de cambiar la forma en que las personas ven y experimentan la moda. Nos dimos cuenta de que la moda no tiene por qué ser perjudicial para el medio ambiente. Por eso, nos propusimos ofrecer una alternativa elegante y sostenible.</P>
-    </section>
+        <nav class="icon-wh">
+            <a href="https://api.whatsapp.com/send?phone=573132540014" target="_blank"><img src="../img/whatsapp.png" alt="" class="boton-wh"></a>
+        </nav>
+    </main>
+    
 
     <footer class="footer">
         <ul class="copy-pie">
@@ -47,5 +87,7 @@
         </ul>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
