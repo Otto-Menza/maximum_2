@@ -1,0 +1,35 @@
+@mixin milDos{
+    @media screen and (max-width: 1250px){
+        @content;
+    }
+}
+
+@mixin mil{
+    @media screen and (max-width: 1000px){
+        @content;
+    }
+}
+
+@mixin noveNovenUno{
+    @media screen and (max-width: 991px){
+        @content;
+    }
+}
+
+@mixin nove{
+    @media screen and (max-width: 900px){
+        @content;
+    }
+}
+
+@mixin seis{
+    @media screen and (max-width: 600px){
+        @content;
+    }
+}
+
+@mixin cuatro{
+    @media screen and (max-width: 400px){
+        @content;
+    }
+}

@@ -1,0 +1,14 @@
+.conte-productos{
+    .conte-productos-uno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @import "./productosSub";
+    }
+    .conte-productos-dos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @import "./productosSub";
+    }
+}

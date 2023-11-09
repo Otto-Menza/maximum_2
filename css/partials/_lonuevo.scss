@@ -1,0 +1,48 @@
+.conte-ctlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+
+    @include mil{
+        flex-direction: column;
+    }
+
+    .conte-item-ctlogo{
+        list-style-type: none;
+        text-align: center;
+
+        .foto{
+            height: 20rem;
+            border-radius: 0.5rem;
+            margin: 0 2rem;
+
+            @include milDos{
+                height: 15rem;
+            }
+            @include cuatro{
+                height: 10rem;
+            }
+        }
+        .boton{
+            font-size: 1rem;
+            margin:1rem;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.2rem 1rem;
+            border: none;
+            border-radius: 1rem;
+            background-color: #F4FF2B;
+            font-weight: bold;
+            transition: background-color 0.3s;
+
+            &:hover{
+                background-color: #00BF63;
+            }
+            a{
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,35 @@
+.main-nosotros{
+    display: flex;
+    justify-content: center;
+
+    .contacto{
+        padding: 2rem 0;
+        width: 28rem;
+
+        .mb-3{
+            .form-label{
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+        .conte-item-contacto{
+            display: flex;
+            justify-content: space-between;
+        }
+        .conte-boton-enviar{
+            text-align: center;
+            
+            .boton-enviar{
+                padding: 0.3rem 3rem;
+                background-color: #018847;
+                border: none;
+                border-radius: 15px;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+        @include seis{
+            padding: 2rem 1rem 0;
+        }
+    }
+}

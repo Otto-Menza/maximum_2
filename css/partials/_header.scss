@@ -1,0 +1,63 @@
+.navbar{
+    background-image: linear-gradient(to right, #8C52FF, #00BF63);
+
+    .logo{
+        height: 4rem;
+    }
+    .collapse{
+        
+        .conte-icon-top{
+            .btn{
+                background-color: #292929;
+                color: rgb(228, 228, 228);
+            }
+            .icon-top{
+                height: 2rem;
+                margin: 0 1rem;
+                transition: height 0.3s;
+                &:hover{
+                    height: 2.3rem;
+                }
+
+                @include noveNovenUno{
+                    margin: 0.5rem 0;
+                }
+            }
+            @include noveNovenUno{
+                flex-direction: column;
+            }
+            .form-control{
+                @include noveNovenUno{
+                    width: 40%;
+                }
+                @include seis{
+                    width: 60%;
+                }
+                @include cuatro{
+                    width: 900%;
+                }
+            }
+        }
+        .navbar-nav{
+            .nav-link{
+                text-decoration: none;
+                color: white;
+                transition: color 0.3s, font-size 0.3s, font-weight 0.3s;
+                font-size: 1rem;
+                &:hover{
+                    color: #000000;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+            }
+            .active{
+                color: black;
+                font-weight: bold;
+                text-decoration: underline;
+                text-underline-offset: 0.3rem;
+                text-decoration-thickness: 3px; 
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

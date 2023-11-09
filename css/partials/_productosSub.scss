@@ -1,0 +1,42 @@
+@include nove{
+    flex-direction: column;
+}
+.conte-item-prodctos{
+    list-style-type: none;
+    margin: 1rem 0;
+
+    .item-productos{
+        text-align: center;
+
+        .img-item-productos{
+            width: 10rem;
+            border-radius: 5px;
+            @include nove{
+                width: 20rem;
+            }
+            @include seis{
+                width: 15rem;
+            }
+        }
+    }
+    .boton-item-productos{
+        font-size: 1rem;
+        margin:1rem;
+        font-family: 'Poppins', sans-serif;
+        padding: 0.2rem 1rem;
+        border: none;
+        border-radius: 1rem;
+        background-color: #F4FF2B;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s;
+
+        &:hover{
+            background-color: #00BF63;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+}

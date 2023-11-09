@@ -1,0 +1,61 @@
+.conte-nosotros{
+    .item-img-uno-nosotros{
+        grid-area: imguno;
+    }
+    .item-texto-uno-nosotros{
+        grid-area: textouno;
+    }
+    .item-img-dos-nosotros{
+        grid-area: imgdos;
+    }
+    .item-texto-dos-nosotros{
+        grid-area: textodos;
+    }
+
+    .item-nosotros{
+        list-style-type: none;
+        display: grid;
+        grid-template-areas: 
+        "imguno textouno textouno"
+        "textodos textodos imgdos"
+        ;
+        align-items: center;
+        padding: 3rem 9rem;
+
+        .img-nosotros{
+            width: 20rem;
+
+            @include mil{
+                display: flex;
+                flex-direction: column;
+            }
+            @include seis{
+                width: 20rem;
+            }
+            @include cuatro{
+                width: 15rem;
+            }
+        }
+        .item-texto-uno-nosotros, .item-texto-dos-nosotros{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .itemtexto-uno-nosotros{
+            @include mil{
+                margin-bottom: 2rem;
+            }
+        }
+
+        @include mil{
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+        }
+        @include cuatro{
+            padding: 1rem 0.3rem;
+        }
+    }
+}
