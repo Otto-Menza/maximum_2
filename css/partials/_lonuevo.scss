@@ -8,14 +8,49 @@
         flex-direction: column;
     }
 
+    
     .conte-item-ctlogo{
         list-style-type: none;
         text-align: center;
+        -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                
+        @-webkit-keyframes tilt-in-fwd-tr {
+            0% {
+            -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+                    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+                    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            opacity: 1;
+            }
+        }
+        @keyframes tilt-in-fwd-tr {
+            0% {
+            -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+                    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+                    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            opacity: 1;
+            }
+        }
+
+
 
         .foto{
             height: 20rem;
             border-radius: 0.5rem;
             margin: 0 2rem;
+            transition: all 1s;
+
+            &:hover{
+                transform: scale(1.1) translateY(-1rem);
+            }
 
             @include milDos{
                 height: 15rem;
@@ -33,16 +68,29 @@
             border-radius: 1rem;
             background-color: #F4FF2B;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: all 0.5s;
 
             &:hover{
                 background-color: #00BF63;
+                transform: scale(1.1);
             }
             a{
                 text-decoration: none;
                 color: #000000;
             }
         }
+
     }
+    .ctlogo1{
+        animation-delay: 0.5s;
+    }
+    .ctlogo2{
+        animation-delay: 1s;
+    }
+    .ctlogo3{
+        animation-delay: 1.5s;
+    }
+
+    
 
 }

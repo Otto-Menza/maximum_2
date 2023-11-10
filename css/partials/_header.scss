@@ -3,7 +3,35 @@
 
     .logo{
         height: 4rem;
+        -webkit-animation: swirl-in-fwd 0.6s ease-out both;
+	    animation: swirl-in-fwd 0.6s ease-out both;
+
+        @-webkit-keyframes swirl-in-fwd {
+            0% {
+            -webkit-transform: rotate(-540deg) scale(0);
+                    transform: rotate(-540deg) scale(0);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: rotate(0) scale(1);
+                    transform: rotate(0) scale(1);
+            opacity: 1;
+            }
+        }
+        @keyframes swirl-in-fwd {
+            0% {
+            -webkit-transform: rotate(-540deg) scale(0);
+                    transform: rotate(-540deg) scale(0);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: rotate(0) scale(1);
+                    transform: rotate(0) scale(1);
+            opacity: 1;
+            }
+        }
     }
+    
     .collapse{
         
         .conte-icon-top{
@@ -14,10 +42,20 @@
             .icon-top{
                 height: 2rem;
                 margin: 0 1rem;
-                transition: height 0.3s;
-                &:hover{
-                    height: 2.3rem;
+                transition: all 0.5s;
+                animation: carrito 0.8s;
+                animation-iteration-count: 10;
+                animation-direction: alternate;
+                animation-delay: 2s;
+                @keyframes carrito{
+                    100% {
+                        scale: (1.2);
+                    }                    
                 }
+                &:hover{
+                    transform: scale(1.2);
+                }
+
 
                 @include noveNovenUno{
                     margin: 0.5rem 0;
