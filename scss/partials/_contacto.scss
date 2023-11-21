@@ -8,8 +8,8 @@
 
         .mb-3{
             .form-label{
-                color: rgb(197, 31, 31);
-                font-family: 'Poppins', sans-serif;
+                color:aliceblue;
+                font-family: $fontPoppins;
             }
         }
         .conte-item-contacto{
@@ -21,11 +21,11 @@
             
             .boton-enviar{
                 padding: 0.3rem 3rem;
-                background-color: #018847;
+                background-color: $colorVerde;
                 border: none;
                 border-radius: 15px;
                 color: white;
-                font-family: 'Poppins', sans-serif;
+                font-family: $fontPoppins;
             }
         }
         @include seis{

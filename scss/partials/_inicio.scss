@@ -28,11 +28,11 @@
                 text-align: center;
                 font-size: 2rem;
                 .texto-uno-color{
-                    color: #00BF63;
+                    color: $colorVerde;
                 }
             }
             .linea-horizontal{
-                border-top: 2px solid #1D8F63;
+                border-top: 2px solid $colorVerde;
                 width: 70%;
                 text-align: center;
                 margin: 1rem 0;
